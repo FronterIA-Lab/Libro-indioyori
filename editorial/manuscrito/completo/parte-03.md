@@ -103,4 +103,6 @@ Los capítulos que siguen no te piden que elijas un disfraz. Te piden que recono
 
 Geografías del despojo: no para que colecciones heridas, sino para que dejes de creer que tu vacío es defecto personal. Tiene coordenadas. Tiene historia. Tiene responsables. Y tiene —si eliges— puerta de salida.
 
+Este umbral es corto a propósito: no sustituye a los capítulos. Los enciende. Si sales de aquí sabiendo que los cinco no son folklore, ya cumplió. El resto es lectura con el cuerpo puesto.
+
 Entra.
