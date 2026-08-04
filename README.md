@@ -15,7 +15,7 @@ Creación de un **libro comercial** a partir del corpus académico de FronterIA-
 | [`sitio/`](sitio/) | Landing editorial de preventa (identidad mono + avatar) |
 | [`editorial/identidad.md`](editorial/identidad.md) | Sistema visual y voz de la edición |
 | [`editorial/estudio-mercado.md`](editorial/estudio-mercado.md) | Canales, precio digno, go-to-market |
-| [`editorial/manuscrito/`](editorial/manuscrito/) | Estructura comercial, manifiesto y muestra cap. 1 |
+| [`editorial/manuscrito/completo/`](editorial/manuscrito/completo/) | **Manuscrito comercial completo** (18 caps. + manifiesto) |
 | PDFs / DOCX (raíz) | Fuentes académicas y manuscrito largo |
 
 ## Cómo ver la landing
@@ -43,7 +43,21 @@ Para el chicano.
 Para quien creció “blanco” con familia morena y no se encuentra.  
 Para el afromexicano que el relato nacional borró.
 
+## Manuscrito comercial
+
+Listo en [`editorial/manuscrito/completo/LIBRO-COMPLETO.md`](editorial/manuscrito/completo/LIBRO-COMPLETO.md)  
+(~28 000 palabras · 18 capítulos · índice en `completo/INDICE.md`).
+
 ## Identidad
 
 Letra mono. Blanco y negro. Detalles en magenta / cian / violeta del avatar IndioYori.  
 Marca primero. Argumento claro. Sin abaratar el pensamiento.
+
+## Dónde subir (cuando tipografíes EPUB/PDF)
+
+| Formato | Canal |
+|---|---|
+| eBook | Gumroad / Payhip (margen) + Amazon KDP Kindle |
+| Impreso | KDP Paperback + IngramSpark |
+| Firmados | Solo canal directo IndioYori / FronterIA |
+| Landing | Netlify / GitHub Pages / dominio propio (`sitio/`) |
