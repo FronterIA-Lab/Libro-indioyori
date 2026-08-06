@@ -21,11 +21,12 @@ PAGES = int(sys.argv[1]) if len(sys.argv) > 1 else 168
 # spine estimate: leaves x caliper (90 g/m2 offset ~0.11 mm/leaf) + cover wrap.
 SPINE = float(sys.argv[2]) if len(sys.argv) > 2 else round((PAGES / 2) * 0.113 + 0.5, 1)
 
-MAGENTA = "#e5197f"
-VIOLET = "#7b3fb0"
-INK = "#f2f0f2"
-BG = "#0c0c11"
-MUTE = "#9a97a3"
+# portada negra total, acento turquesa (sin rosa/violeta)
+MAGENTA = "#1ec9d4"   # turquesa (nombre conservado por compatibilidad)
+VIOLET = "#1ec9d4"
+INK = "#f4f4f4"
+BG = "#0a0a0a"
+MUTE = "#8f8f93"
 FONT = '"DejaVu Sans Mono", monospace'
 
 BASE = f"""
@@ -56,7 +57,7 @@ def front_html(x_ok=True):
     return """
 <div class="front-head">
   <div class="kicker">$ ./desinstalar --olvido</div>
-  <h1><span>INDIO</span><span>YORI</span><span class="hl">TEROYOKORI</span><span>NEGRO</span></h1>
+  <h1><span class="hl">INDIO</span><span class="hl">YORI</span><span>TEROYOKORI</span><span>NEGRO</span></h1>
   <div class="rule"></div>
   <p class="sub">El mestizaje como software colonial<br>y las políticas del olvido</p>
 </div>
@@ -66,8 +67,7 @@ def front_html(x_ok=True):
 </div>
 """
 
-GLOW_FRONT = (f"radial-gradient(120% 55% at 24% 34%, rgba(229,25,127,.22), rgba(12,12,17,0) 60%),"
-              f"radial-gradient(90% 48% at 84% 86%, rgba(123,63,176,.18), rgba(12,12,17,0) 60%)")
+GLOW_FRONT = "none"  # negra total
 
 def build_front():
     W, H = TRIM_W + 2 * BLEED, TRIM_H + 2 * BLEED
@@ -78,7 +78,7 @@ def build_front():
 body{{ width:{W}mm; height:{H}mm; background:{BG}; color:{INK};
   font-family:{FONT}; background-image:{GLOW_FRONT}; }}
 .topbar{{ position:absolute; top:{BLEED}mm; left:{BLEED}mm; right:{BLEED}mm;
-  height:2.6mm; background:linear-gradient(90deg,{MAGENTA},{VIOLET}); }}
+  height:2.6mm; background:{MAGENTA}; }}
 {front_panel(xl, xl, 38)}
 """
     html = f"<!doctype html><html><head><meta charset='utf-8'><style>{css}</style></head><body><div class='topbar'></div>{front_html()}</body></html>"
@@ -96,11 +96,9 @@ def build_wrap():
 @page {{ size:{total_w}mm {total_h}mm; margin:0; }}
 {BASE}
 body{{ width:{total_w}mm; height:{total_h}mm; background:{BG}; color:{INK};
-  font-family:{FONT};
-  background-image:radial-gradient(52% 48% at 84% 32%, rgba(229,25,127,.22), rgba(12,12,17,0) 60%),
-                   radial-gradient(50% 44% at 16% 82%, rgba(123,63,176,.16), rgba(12,12,17,0) 60%); }}
+  font-family:{FONT}; }}
 .topbar{{ position:absolute; top:{BLEED}mm; left:{BLEED}mm; right:{BLEED}mm;
-  height:2.6mm; background:linear-gradient(90deg,{VIOLET},{MAGENTA},{VIOLET}); }}
+  height:2.6mm; background:{MAGENTA}; }}
 /* FRONT (right panel) */
 {front_panel(front_left, front_right, 35)}
 /* SPINE */

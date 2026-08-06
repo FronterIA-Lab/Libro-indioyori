@@ -1,8 +1,9 @@
 # Indio Yori · Teroyokori · Negro — Archivos listos para Bubok
 
 Formato de impresión: **15,2 × 22,8 cm** (equivale a 6 × 9 in / 152,4 × 228,6 mm).
-Tipografía: DejaVu Sans Mono. Blanco y negro con acentos en los colores del avatar
-(magenta `#e5197f` y violeta `#7b3fb0`).
+Tipografía: DejaVu Sans Mono.
+- **Interior: blanco y negro total** (sin colores).
+- **Portada: negra total** con acento **turquesa** `#1ec9d4` en "INDIO YORI".
 
 ## 1. Interior (tripa) — subir como PDF
 

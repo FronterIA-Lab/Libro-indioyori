@@ -102,8 +102,8 @@ FRONT = f"""
     Edición comercial · Primera edición, 2026<br><br>
     © 2026 Indioyori Investigador (Yoreme / Ódami)<br>
     © 2026 FronterIA-Lab · GTEPICC—CLACSO<br><br>
-    ISBN: 000-00-0000-000-0 &nbsp;<span style="color:#d81b7a">(pendiente de asignación)</span><br>
-    Depósito Legal: 0-0000-0000 &nbsp;<span style="color:#d81b7a">(pendiente de asignación)</span><br><br>
+    ISBN: 000-00-0000-000-0 &nbsp;<span style="color:#777">(pendiente de asignación)</span><br>
+    Depósito Legal: 0-0000-0000 &nbsp;<span style="color:#777">(pendiente de asignación)</span><br><br>
     Todos los derechos reservados. Queda prohibida la reproducción total o
     parcial de esta obra por cualquier medio sin autorización escrita del titular
     del copyright, salvo cita breve con fines de crítica o investigación.<br><br>

@@ -3,11 +3,11 @@
    Mirrored margins: inner (binding) 30 mm, outer 20 mm, top/bottom 22 mm. */
 
 :root{
-  --ink:#141414;
+  --ink:#111111;
   --soft:#5b5b5b;
-  --magenta:#d81b7a;   /* avatar accent */
-  --violet:#5b2c8a;    /* avatar accent */
-  --rule:#d9d9d9;
+  --magenta:#111111;   /* blanco y negro total: acentos en negro */
+  --violet:#111111;
+  --rule:#cfcfcf;
 }
 
 @page{
